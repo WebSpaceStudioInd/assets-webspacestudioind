@@ -1,0 +1,19 @@
+/**
+ * File: assets/css/animation.css
+ * Version: 1.0.0
+ * Description: Keyframes and animation utilities.
+ * Author: WebSpaceStudio Engineering Team
+ * Last Update: 2026-07-31
+ */
+
+.faq-icon {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-content {
+  transition: all 0.3s ease-in-out;
+}

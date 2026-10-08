@@ -1,0 +1,33 @@
+/**
+ * File: assets/css/style.css
+ * Version: 2.0.0
+ * Description: Ultra-Dark Full Black Baseline Stylesheet
+ * Author: WebSpaceStudio Engineering Team
+ * Last Update: 2026-07-31
+ */
+
+:root {
+  --bg-black: #000000;
+  --text-white: #ffffff;
+  --text-muted: #888888;
+}
+
+body {
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Infinite Marquee Slider Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-wrapper:hover .animate-marquee {
+  animation-play-state: paused;
+}
